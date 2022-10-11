@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator in JavaScript | Isaac</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Url Shortner</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js" ></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            fontFamily:{
-              sans:['Poppins','sans-serif'],
-            }
-          }
-        }
-    </script>
-</head>
-<body>
-  <div class="">
-    <h1 class="text-4xl bg-orange-300 text-center py-2 ">QR-Code-Generator</h1>
-  </div>
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <h6>Press and Hold to Download</h6>
+        <p>Paste a url or enter text to create QR code</p>
+      </header>
+      <div class="form">
+        <input type="text" id="input" spellcheck="false" placeholder="Enter text or url">
+        <button type="submit">Generate QR Code</button>
+      </div>
+      <!-- next release ge  -->
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+      <div class="footer"><h5>Made With Love💖 By <a href="https://webdeveloperisaac">Web Developer Isaac</a></h5>
+      </div>
+    </div>
+    
+    <!-- this should be here only because it has to take the input  -->
+    <script src="./js/index.js"></script>
+    
+  </body>
 </html>
